@@ -1,0 +1,11 @@
+/* Electron特定样式 */
+.electron-drag {
+  -webkit-app-region: drag;
+}
+.electron-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+button, input, select, textarea {
+  -webkit-app-region: no-drag;
+}
