@@ -1,0 +1,30 @@
+{
+  "appId": "com.filespush.app",
+  "productName": "文件推送工具",
+  "version": "1.1.0",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "build/**/*",
+    "electron/**/*",
+    "dist-electron/**/*",
+    "node_modules/**/*",
+    "package.json"
+  ],
+  "extraMetadata": {
+    "main": "electron/main-simple.js"
+  },
+  "electronVersion": "33.2.0",
+  "win": {
+    "target": "nsis",
+    "icon": "build/icon.ico",
+    "executableName": "files-push"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  }
+}
